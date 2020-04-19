@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<div class="wrapper">
+    <div class="center">
+        <container class="nav">
+                <div class="logo"><img class='logoimg' src='./image/logo.png'></div>
+                <div class="mainmenu">
+                        <a href="mainpage.html">Основная страница</a>
+                        <a href="catalog.html">Каталог</a>
+                        <a href="contacts.html">Контакты</a>
+                </div>
+                <div class="right"> 
+                    <div class="search md-form active-pink-2 mb-3">
+                        <input class="form-control" type="text" aria-label="Search" placeholder='Поиск'>
+                    </div>
+                    <div id="corsina"><img class='corsinaimg' src='./image/basket.svg'><span class="howmuch catalog_counter">0</span></div>
+                    <div class="user">
+                        <div id='userlogin'>
+                            <a href="userpage.html"><i class="fas fa-user-tie userIMG"></i>
+                            <p id='nameOut'></p></a>
+                        </div>
+                        <button type="button" class="btn btn-secondary" id="user"><a href="userpage.html">Войти</a></button>
+                    </div>
+            </div>
+            
+        
+        </container>
+            
+        <container class="filter">
+            <p>Сортировать</p>
+            <div>
+                <p>Цена</p>
+                <span>От:</span><input type="number" id='findPriceFrom'>
+                <span>До:</span><input type="number" id='findPriceTo'>
+            </div>
+            <div>
+                <p>Тип</p>
+                <select id='type'>
+                    <option>Счетчик</option>
+                    <option>АВ</option>
+                </select>
+            </div>
+            <div>
+                <button id='checkProduct'>Найти</button>
+                <button id='sbros'>Сбросить</button>
+            </div>
+            
+        </container>
+
+        <div class="container_products" id='container_products'>
+            <!-- <div class="item">
+                <div class="name">Product1</div>
+                <div class="img"></div>
+                <div class="price">111</div>
+                <button>Купить</button>
+            </div> -->
+        </div>
+        <div class='container_cart' id='conteinerCart'>
+
+        </div>
+        <conteiner>
+            <div id='footer' >
+    
+                <p> УНП 0000000000000000000 (вы нас не найдете) </p>
+                <p>Copyright © 2020. Сайт интернет-каталог-магазин-дипломный проект-причина дергающегося глаза </p>
+                </div>
+        </conteiner>
+    </div></div>        
+        <script>if(localStorage.getItem('status') == 'true'){
+            document.getElementById('user').style.display = 'none';
+            document.getElementById('userlogin').style.display = 'flex';
+        }</script>
+        <script src="all.js"></script>
+        <script src="./js/script.js"></script>
+        <script src="createoneproduct.js"></script>
+        <script src="store.js"></script>
+        <script src="./js/catalog.js"></script>
+        <script src="./js/user.js"></script>
+        <script src='cart.js'></script>
+        <script src="./js/filter.js"></script>  
+        <script src='./js/search.js'></script>      
+        
+    </body>
+    </html>

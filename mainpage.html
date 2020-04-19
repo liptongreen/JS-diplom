@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<div class="wrapper">
+    <div class="center">
+        <container class="nav">
+                <div class="logo"><img class='logoimg' src='./image/logo.png'></div>
+                <div class="mainmenu">
+                        <a href="mainpage.html" id='mainpage'>Основная страница</a>
+                        <a href="catalog.html" id='catalog'>Каталог</a>
+                        <a href="contacts.html">Контакты</a>
+                </div>
+                <div class="right"> 
+                    <div class="search md-form active-pink-2 mb-3">
+                        <input id='search' class="form-control" type="text" aria-label="Search" placeholder='Поиск'>
+                    </div>
+                    <div class="corsina" id='corsina'><a href="#" class='corsina'><img class='corsinaimg' src='./image/basket.svg'><span class="howmuch catalog_counter">0</span></a></div>
+                    <div class="user">
+                        <div id='userlogin'>
+                            <a href="userpage.html"><i class="fas fa-user-tie userIMG"></i>
+                            <p id='nameOut'></p></a>
+                        </div>
+                        <button type="button" class="btn btn-secondary" id="user"><a href="userpage.html">Войти</a></button>
+                    </div>
+            </div>
+        </container>
+        <container class='mainpicture'>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="./image/first_slide.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Высокое качество</h5>
+                        <p>Более 20-ти лет на рынке электротоваров</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./image/second_slide.jpg" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Безопасность</h5>
+                        <p>Специалисты, прошедшие подготовку и получившие сертификаты</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./image/third_slide.jpg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Инновации</h5>
+                        <p>Новейшие технологии от лидеров рынка</p>
+                      </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </container>
+        <container class='sale'>
+                <div class='sale_left'>
+                    <h1>Акция</h1>
+                    <h2>При заказе данного оборудования в количестве более 100 штук цены становятся акционными</h2>
+                    <p>*акционный товар недоступен для покупки в рассрочку</p>
+                </div>
+                
+                <div class="owl-carousel owl-theme sale_right">
+                    <div>
+                        <img class="first_sale saleimg" src="./image/first_sale.jpg" alt="First slide">
+                        <h6 id='counter1'></h6>
+                        <h5><s>61.35 руб</s> 44.26 руб</h5>
+                        <p>Диф автомат 16А 30мА 1П+Н C AC 4,5кА 230В =S= EASY 9</p> 
+                    </div>
+                    <div> 
+                        <img class="second_sale saleimg" src="./image/second_sale.png" alt="Second slide">
+                        <h6 id='counter2'></h6>
+                        <h5><s>85.32 руб</s> 59.99 руб</h5>
+                        <p>PROxima корпус встраиваемый с прозрачной дверцей 3 ряд/45мод, IP41, IK07,Россия</p>
+                    </div>
+                  </div>
+        </container>
+
+        <container class="textcenter">
+            <div class="textcenter_in">
+                <p>Top 1 на рынке электротоваров</p>
+                <p class='smalltext'>Сотни положительных отзывов от довольных покупателей.</p>
+            </div>
+            <div class="textcenter_in">
+                <p>Конкурентно способная цена</p>
+                <p class='smalltext'>Цены ниже чем у магазинов-конкурентов</p>
+            </div>
+            <div class="textcenter_in">
+                <p>Индивидуальный подход</p>
+                <p class='smalltext'>Профессиональные консультанты помогут и подскажут каждому исходя из нужд необходимый товар</p>
+            </div>
+        </container>
+        
+        <conteiner>
+            <div id='footer' >
+    
+                <p> УНП 0000000000000000000 (вы нас не найдете) </p>
+                <p>Copyright © 2020. Сайт интернет-каталог-магазин-дипломный проект-причина дергающегося глаза </p>
+                </div>
+        </conteiner>
+        
+    </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./carousel/owl.carousel.min.js"></script>
+    <script>$(document).ready(function(){
+        $(".owl-carousel").owlCarousel();
+      });
+      $('.owl-carousel').owlCarousel({
+    items:1,
+    margin:10,
+    autoHeight:false
+    })
+    ;
+    </script>
+            <script>
+            if(localStorage.getItem('status') == 'true'){
+                document.getElementById('user').style.display = 'none';
+                document.getElementById('userlogin').style.display = 'block';
+            }</script>
+    <script src='all.js'></script>
+    <script src="./js/user.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="createoneproduct.js"></script>
+    <script src="store.js"></script>
+    <script src="./js/catalog.js"></script>
+    <script src="./js/counter.js"></script>
+    <script src='./js/search.js'></script>
+    
+</body>
+</html>
